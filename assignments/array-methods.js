@@ -119,11 +119,11 @@ function pushTo(x){
 
  runners.forEach(pushTo);
 
-const reducer = (init, num) => init + num;
+ 
 
 
 
-ticketPriceTotal.reduce(reducer);
+ticketPriceTotal.reduce(function (init, num){ init + num;});
 
     
 
