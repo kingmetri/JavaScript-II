@@ -2,14 +2,19 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
+  arr.push(arr.shift());
+
 }
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+return arr.length;
 }
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  let lastOne = [];
+  lastOne.pop(arr[3]);
 }
 
 function sumNums(x, y, cb) {
